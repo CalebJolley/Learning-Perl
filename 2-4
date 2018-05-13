@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+
+#multiplies 2 user input variables and displays product
+
+use strict;
+use 5.010;
+
+chomp(my $one = <STDIN>);
+chomp(my $two = <STDIN>);
+
+say $one * $two;
