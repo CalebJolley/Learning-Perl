@@ -1,0 +1,8 @@
+#!/usr/bin/perl
+
+use strict;
+use 5.010;
+
+my $radius = 12.5;
+
+say $radius * 2 * 3.141592654;
