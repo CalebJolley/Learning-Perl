@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+
+#reads file or input and prints out newline separated input
+#in reverse order of input
+
+use strict;
+use 5.010;
+
+my @input = <STDIN>;
+
+print sort @input;

@@ -1,0 +1,14 @@
+#!/usr/bin/perl
+
+#reads numbers  and prints out corresponding name from list
+
+use strict;
+use 5.010;
+
+chomp(my @input = <STDIN>);
+my @names = qw /fred betty barney dino wilma pebbles bamm-bamm/;
+
+foreach (@input)
+{
+	print "$names[$_]\n";
+}
