@@ -1,5 +1,7 @@
 #!/usr/bin/perl
 
+#calculates circumference of 12.5 unit circle
+
 use strict;
 use 5.010;
 

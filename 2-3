@@ -1,10 +1,18 @@
 #!/usr/bin/perl
 
 #calculates circumference of circle with user input radius
+#sets circumference to 0 if user input is less than 0
 
 use strict;
 use 5.010;
 
 chomp(my $radius = <STDIN>);
 
-say $radius * 2 * 3.141592654;
+if($radius < 0)
+{
+	say 0;
+}
+else
+{
+	say $radius * 2 * 3.141592654;
+}
