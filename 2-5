@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+
+#reads user input string followed by user input number.
+#prints out string number times
+
+use strict;
+use 5.010;
+
+chomp(my $string = <STDIN>);
+chomp(my $number = <STDIN>);
+
+say $string x $number;
