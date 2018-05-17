@@ -1,0 +1,20 @@
+#!/usr/bin/perl
+
+#prints out sum of 1 - 1000
+
+use strict;
+use 5.010;
+
+sub total
+{
+	my $total = 0;
+	foreach (@_)
+	{
+		$total += $_;
+	}
+	return $total;
+}
+
+my @fred = 1..1000;
+my $fred_total = total(@fred);
+print "The total of \@fred is $fred_total.\n";

@@ -1,0 +1,27 @@
+#!/usr/bin/perl
+
+#prints out name of all "greeted"
+
+use strict;
+use 5.010;
+
+sub greet
+{
+	state $check = 0;
+	state @last;
+	if($check == 0)
+	{
+		$check++;
+		print "Hi $_[0]! You are the first one here!\n";
+	}
+	else
+	{
+		print "Hi $_[0]! I've seen: @last\n";
+	}
+	push @last, $_[0];
+}
+
+greet("Fred");
+greet("Barney");
+greet("Wilma");
+greet("Betty");
